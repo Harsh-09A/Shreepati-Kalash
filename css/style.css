@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* @font-face {
+  font-family: "Roboto";
+  src: url("../fonts/") format("truetype");
+} */
+
+:root,
+html {
+  font-family: Roboto, "Times New Roman", Times, serif;
+  scroll-padding-top: 70px;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --colorPrimary: #f08325;
+  --colorSecondary: #968169;
+  --colorBlack: #000000;
+  --colorWhite: #ffffff;
+}
+
+/* Navbar Starts */
+header {
+  height: 80px;
+}
+
+/* Navbar */
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  color: var(--colorBlack);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  background-color: var(--colorPrimary);
+  height: 100%;
+  color: var(--colorWhite);
+}
+
+.nav-link:hover {
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+@media only screen and (min-width: 1000px) {
+  .navbar-nav .nav-link {
+    font-size: 1.01vw !important;
+    letter-spacing: 0.02vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar-brand img {
+    height: 45px;
+  }
+}
+
+/* Navbar Ends */
+
+main {
+  margin-top: 80px;
+}
+
+/* Slider */
+.carousel {
+  overflow: hidden !important;
+  max-height: calc(100vh - 80px);
+}
+
+.carousel-indicators .active {
+  background-color: var(--colorSecondary) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-item .banner1 {
+    content: url("../img/banners/mobile_banner2.jpg");
+  }
+  .carousel-item .banner2 {
+    content: url("../img/banners/mobile_banner2.jpg");
+  }
+}
+
+/* Overview */
+.overview-para {
+  text-align: justify;
+}
+.overview_img img {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+/* gallery */
+
+#gallery_section .row {
+  --bs-gutter-y: 1.5rem;
+}
+
+.gall {
+  border: 2px solid var(--colorPrimary);
+  border-radius: 20px;
+  padding: 7px;
+  background-color: #f1f1f1;
+  box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.5) 0px 2px 16px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.726) 0px 7px 29px 0px; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.gall img {
+  border-radius: 20px;
+  aspect-ratio: 4/3;
+}
+
+/* Configuration */
+
+#Configuration {
+  margin: 10px 30px;
+}
+
+.table-responsive table {
+  width: max-content;
+}
+@media screen and (min-width: 1000px) {
+  .table-responsive {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* amenities */
+
+.amenities-card {
+  width: 100%;
+  height: 15vw;
+  min-height: 250px;
+  background-color: rgba(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  box-shadow: -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.2),
+    0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.amenities-card:hover .title {
+  transform: translateY(100%);
+}
+
+.amenities-card:hover .photo {
+  opacity: 1;
+}
+
+.amenities-card .title {
+  background-color: rgba(32, 37, 41, 0.5);
+  backdrop-filter: blur(0.5rem);
+  width: 100%;
+  text-align: center;
+  /* height: 35%; */
+  position: absolute;
+  bottom: 0%;
+  padding: 1rem;
+  border-top: 0.1rem solid #4c555c;
+  box-shadow: 0rem -0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in;
+}
+
+.amenities-card .photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+  /* aspect-ratio: 3/2; */
+}
+
+.amenities-card .img1 {
+  background-image: url(../img/amenities/gym.webp);
+}
+
+.amenities-card .img2 {
+  background-image: url(../img/amenities/kidsplayarea.webp);
+}
+
+.amenities-card .img3 {
+  background-image: url(../img/amenities/indoorgameroom.webp);
+}
+
+.amenities-card .img4 {
+  background-image: url(../img/amenities/senior_citizen.jpg);
+}
+
+.amenities-card .img5 {
+  background-image: url(../img/amenities/cctv.jpg);
+}
+
+.amenities-card .img6 {
+  background-image: url(../img/amenities/elevators.jpg);
+}
+
+.amenities-card .img7 {
+  background-image: url(../img/amenities/water.jpg);
+}
+
+.amenities-card .img8 {
+  background-image: url(../img/amenities/security.jpg);
+}
+
+.amenities-card h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #f3f5f8;
+  text-transform: capitalize;
+}
+/* About */
+#about_section {
+  background-color: #00354a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 970px; */
+  background-attachment: fixed;
+  padding: 0 !important;
+}
+.about_overlay {
+  background: var(--colorBackgroundOverlay);
+  /* height: 970px; */
+  padding: 0;
+}
+#about_section .sub-heading {
+  color: var(--colorPrimary);
+  font-size: 1.5em;
+}
+
+#about_section .sub-heading {
+  letter-spacing: 3.5px;
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.submit-btn,
+.submit-btn:hover,
+.submit-btn:focus-visible,
+.submit-btn:active {
+  background-color: var(--colorSecondary) !important;
+  border: none !important;
+}
+@media screen and (max-width: 600px) {
+  .enquire-section {
+    padding: 0 !important;
+  }
+  .about-para-container {
+    padding: 2em !important;
+    padding-top: 2em;
+  }
+}
+
+.read_more {
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  padding-left: 10px;
+  color: var(--colorWhite);
+}
