@@ -84,7 +84,7 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner2.jpg");
+    content: url("../img/banners/mobile_banner001.jpg");
   }
   .carousel-item .banner2 {
     content: url("../img/banners/mobile_banner2.jpg");
@@ -231,6 +231,7 @@ main {
   color: #f3f5f8;
   text-transform: capitalize;
 }
+
 /* About */
 #about_section {
   background-color: #00354a;
@@ -245,6 +246,7 @@ main {
   /* height: 970px; */
   padding: 0;
 }
+
 #about_section .sub-heading {
   color: var(--colorPrimary);
   font-size: 1.5em;
