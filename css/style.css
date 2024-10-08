@@ -84,7 +84,7 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner001.jpg");
+    content: url("../img/banners/mobile_banner0001.jpg");
   }
   .carousel-item .banner2 {
     content: url("../img/banners/mobile_banner2.jpg");

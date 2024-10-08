@@ -1,7 +1,7 @@
 (function () {
   emailjs.init({
-    // publicKey: "to9PlFrMMimgruuH0", // DIGIN
-    publicKey: "BwX8mmKlFidsWvP67", // HARSH
+    publicKey: "to9PlFrMMimgruuH0", // DIGIN
+    // publicKey: "BwX8mmKlFidsWvP67", // HARSH
   });
 })();
 
